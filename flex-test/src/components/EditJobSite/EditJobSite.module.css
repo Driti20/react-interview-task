@@ -1,0 +1,96 @@
+.editModal {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(55, 55, 55, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  .editModalContier {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    background-color: #fff;
+    z-index: 10;
+    border-radius: 10px;
+    .modalHeader {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #f9f9f9;
+      border-radius: 10px 10px 0 0;
+      .modalTitle {
+        margin: 0;
+        padding: 7px 10px;
+      }
+      .closeModalBtn {
+        margin-right: 10px;
+      }
+    }
+    .info {
+      display: flex;
+      align-items: center;
+      margin: 5px 10px;
+      svg {
+        fill: #1264a3;
+      }
+      p {
+        margin-left: 5px;
+        font-size: 12px;
+      }
+    }
+    .modalForm {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      .formItemQuantity {
+        display: flex;
+        align-items: center;
+        * {
+          flex: 1;
+        }
+        .itemInput {
+          margin: 0;
+          margin-right: 10px;
+          label {
+            margin: 0;
+            margin-left: 10px;
+          }
+        }
+        .quantityInput {
+          margin: 0;
+          label {
+            margin: 0;
+            margin-left: 10px;
+          }
+        }
+      }
+      .descriptionInput {
+        margin: 10px 0;
+        label {
+          margin: 0;
+          margin-left: 10px;
+        }
+      }
+      .notesInput {
+        margin: 0;
+        label {
+          margin: 0;
+          margin-left: 10px;
+        }
+      }
+      .saveButton {
+        padding: 0 5px;
+        background: #71cf48;
+        color: #fff;
+        margin-top: 10px;
+        align-self: flex-end;
+      }
+    }
+  }
+}
