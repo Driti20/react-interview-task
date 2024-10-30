@@ -1,0 +1,107 @@
+.Header {
+  width: 100%;
+  display: flex;
+  border-radius: 12px;
+  padding: 2px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  * {
+    text-align: center;
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+  }
+  .onRoad{
+    background: #ECDE7C;
+  }
+  .completed{
+    background: #7AC14D;
+  }
+  .onHold{
+    background: #FE4C4A;
+  }
+}
+.table {
+  width: 100%;
+  margin-top: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  .titleText{
+    margin: -16px -16px 16px -16px;
+    background: #f9f9f9;
+    padding: 15px 10px;
+    border-radius: 8px 8px 0 0;
+  }
+  .title {
+    display: flex;
+    justify-content: space-between;
+    .info {
+      display: flex;
+      align-items: center;
+      svg {
+        fill: #1264a3;
+      }
+      p {
+        margin-left: 5px;
+        font-size: 12px;
+      }
+    }
+    .input {
+      width: 400px;
+      justify-content: end;
+      .createButton:hover{
+        background: #68C142;
+    }
+      .createButton{
+        background: #71CF48;
+        color: #ffffff;
+        .plusIcon{
+            margin: 0;
+            padding: 0;
+            font-size: 18px;
+        }
+        div{
+            margin: 0;
+            padding: 0;
+        }
+      }
+    }
+  }
+  .ant-table-thead tr {
+    display: flex;
+  }
+  .ant-table-thead th {
+    background: #ffffff !important ;
+    background-color: white ;
+    flex: 1;
+  }
+  .ant-table-row {
+    display: flex;
+  }
+  .ant-table-row td {
+    flex: 1;
+    overflow: auto;
+  }
+  .ant-table-row td::-webkit-scrollbar {
+    display: none;
+  }
+  .ant-table-thead .ant-table-cell {
+    background-color: green !important;
+  }
+  .columns {
+    display: flex;
+    width: 0;
+  }
+  table {
+    width: 100%;
+    background-color: #ffffff !important;
+    colgroup {
+      width: 70%;
+    }
+    .evenRow {
+      background-color: #f9f9f9;
+    }
+  }
+}
+.ant-table-wrapper .ant-table-thead >tr>th{background: #ffffff;}
