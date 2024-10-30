@@ -1,41 +1,69 @@
-# Flex Business Solutions Tech Test - Inventory Management
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
 
-In Flex Business Solutions, we aim to provide excellence and efficiency on all our lines of code in order to support the day-to-day activities of the company using our software solutions. In this task, you will be provided with a simple design of an app, fetching a list of products from an external source and allowing the user to search or filter among the list.
+<h1>Flex Business Solutions Tech Test - Inventory Management</h1>
 
+<h2>Project Overview</h2>
+<p>This inventory management app is developed to support Flex Business Solutions’ internal operations. Based on a provided design, the app lets users view job sites, create new job sites, and manage item categories. Each job site includes an inventory dashboard, allowing users to search, filter, and update item information efficiently.</p>
 
-### Tech Test Overview
-We have provided below the Figma link of this task. On the main page, we have a list of job sites with their corresponding status. By clicking the "Create" button we can create other job sites and add them to the list. By clicking to the jobsite name, we are redirected to the inventory dashboard for that particular job site. There, we can update items inside categories by double cliking on each cell where the content of that row will automatically be shown on the modal. Updating any specific column and hitting "Save", the content of the table should be automatically updated.
+<h3>Key Functionalities</h3>
+<ol>
+    <li><strong>Create Job Sites</strong>: Add new job sites with specified categories.</li>
+    <li><strong>Inventory Management</strong>: Navigate to the inventory dashboard by selecting a job site. Manage and update items across categories.</li>
+    <li><strong>Search and Filter</strong>: Search and filter items within the inventory for quick access and updates.</li>
+</ol>
 
-[FIGMA] [https://www.figma.com/file/uOxY3AiUFaGuxsU9nk0H1O/ReactJs-Test?node-id=0%3A1]
+<h2>Setup Instructions</h2>
+<ol>
+    <li><strong>Clone the Repository</strong>:
+        <pre><code>git clone https://github.com/Driti20/react-interview-task.git
+cd flex-test</code></pre>
+    </li>
+    <li><strong>Install Dependencies</strong>:
+        <pre><code>npm install</code></pre>
+    </li>
+    <li><strong>Run the Application</strong>:
+        <pre><code>npm start</code></pre>
+        <p> or you can check it here: <a href='https://mm-flex-project.netlify.app/'  target="_blank">https://mm-flex-project.netlify.app/</a> </p>
+    </li>
+    <li><strong>Run Tests</strong>:
+        <ul>
+            <li>To run unit tests for the components:
+                <pre><code>npm test</code></pre>
+            </li>
+            <li>To generate test coverage reports, use:
+                <pre><code>npm test -- --coverage</code></pre>
+            </li>
+        </ul>
+    </li>
+</ol>
 
-We love to see:
-- Functional code
-- Good design
-- Unit testing
+<h2>Questions</h2>
+<ol>
+    <li><strong>How might you make this app more secure?</strong>
+        <ul>
+            <li><strong>Authentication and Authorization</strong>: Implement user authentication to secure access, restricting inventory updates to authorized users.</li>
+            <li><strong>Input Validation and Sanitization</strong>: Add validation on all form inputs to prevent SQL Injection, XSS, and other attacks.</li>
+            <li><strong>HTTPS and API Security</strong>: Use HTTPS for secure communication and token-based authentication for API endpoints.</li>
+        </ul>
+    </li>
+    <li><strong>How would you make this solution scale to millions of records?</strong>
+        <ul>
+            <li><strong>Pagination and Lazy Loading</strong>: Implement pagination to load records in chunks, reducing load on both the client and server.</li>
+            <li><strong>Database Indexing</strong>: Index database tables on commonly searched fields to optimize query performance.</li>
+            <li><strong>Caching</strong>: Use caching for frequently accessed data and implement a CDN to reduce latency.</li>
+        </ul>
+    </li>
+</ol>
 
+<h3>Additional Notes</h3>
+<p>Necessary packages are listed in <code>package.json</code>.</p>
+<p>Screenshots of the final app can be found in the <code>screenshots</code> folder within the repository.</p>
 
-### Notes
-All of you work should take place inside this repository.
-
-You are free to use any packages that would help with this task
-
-You do not need to add additional security measures as part of this exercise.
-We're interested in how you break down the work and build your solution in a clean, easy-to-use, reusable and testable manner.
-
-
-## Deliverables
-You must follow the Figma design and need to add the functionality of:
-a) Create new job sites with their categories
-c) Search job sites & items on the inventory page
-b) Update items on each category
-
-**Create a folder inside the repository and include finished screenshots of the app.**
-**Please make sure to update the readme with**:
-
-- How to run your app with all the necessary details
-- Relating to the task please add answers to the following questions;
-    1. How might you make this app more secure?
-    2. How would you make this solution scale to millions of records?
-  
-
-On completion email a link to your repository to your contact at FLEX BUSINESS SOLUTIONS and ensure it is publicly accessible.
+</body>
+</html>
