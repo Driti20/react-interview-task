@@ -1,10 +1,10 @@
 import { useState } from "react";
-import JobTable from "./table/JobTable";
-import StatusCounter from "./StatusCounter/StatusCounter";
-import AddJobModal from "../AddJobModal/AddJobModal";
+import JobTable from "../../components/HomeHeader/table/JobTable";
+import StatusCounter from "../../components/HomeHeader/StatusCounter/StatusCounter";
+import AddJobModal from "../../components/AddJobModal/AddJobModal";
 import { message } from "antd";
 
-export const HomeHeader = ({dataSource, setDataSource}) => {
+export const Home = ({dataSource, setDataSource}) => {
   const [showJobModal, setshowJobModal] = useState(false);
   const [messageApi, contextHolder] = message.useMessage();
 

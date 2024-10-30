@@ -1,7 +1,7 @@
-import {HomeHeader} from './components/HomeHeader'
+import { Home } from './Pages/Home';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import JobSite from './components/jobsite/JobSite';
+import JobSite from './Pages/JobSite/JobSite';
 import { useState } from 'react';
 import { categories, jobData } from './helper/Data';
 
@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
       <Routes>
-          <Route path="/" element={<HomeHeader dataSource={dataSource} setDataSource={setDataSource}/>} />
+          <Route path="/" element={<Home dataSource={dataSource} setDataSource={setDataSource}/>} />
           <Route path="/jobsite" element={<JobSite dataSource={dataSource} allCategories={allCategories} setAllCategories={setAllCategories}/>} />
         </Routes>
         

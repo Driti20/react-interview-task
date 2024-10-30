@@ -1,10 +1,10 @@
 import { useNavigate, useSearchParams } from "react-router-dom";
-import styles from "./jobsite.module.css";
-import NoService from "./noService";
-import JobSiteTable from "./jobSiteTable";
-import JobSiteMenu from "./JobSiteMenu";
+import styles from "../../components/jobsite/jobsite.module.css";
+import NoService from "../../components/jobsite/noService";
+import JobSiteTable from "../../components/jobsite/jobSiteTable";
+import JobSiteMenu from "../../components/jobsite/JobSiteMenu";
 import { useEffect, useState } from "react";
-import EditJobSiteModal from "../EditJobSite";
+import EditJobSiteModal from "../../components/EditJobSite";
 const JobSite = ({ dataSource, allCategories, setAllCategories }) => {
   const [queryParameters] = useSearchParams();
   const id = queryParameters.get("id");
